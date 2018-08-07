@@ -5,9 +5,7 @@
   "author": "kira",
   "scripts": {
     "dev": "webpack-dev-server --hot --open",
-    "build": "webpack -p",
-    "watch": "webpack --watch",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack -p"
   },
   "dependencies": {
     "bootstrap": "^4.1.3",
