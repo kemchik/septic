@@ -1,0 +1,84 @@
+.main{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    background-color: #566A9A;
+    height: 550px;
+}
+
+.main div:nth-child(1){
+    margin-left: 15%;
+    margin-top: 10%;
+}
+
+.main h1{
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.main h2{
+    color: #ffffff;
+    margin-top: 15px;
+    font-size: 1.7em;
+}
+
+.main img{
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+/*button*/
+.followtopoducts {
+    margin: 70px 10px;
+    text-decoration: none;
+    outline: none;
+    display: inline-block;
+    padding: 20px 30px;
+    position: relative;
+    color: #25ff66;
+    border: 1px solid rgba(205, 255, 213, 0.84);
+    border-radius: 5px;
+    background: none;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.followtopoducts:hover{
+    color: #ffffff;
+}
+
+.followtopoducts:before,
+.followtopoducts:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    box-sizing: border-box;
+}
+
+.followtopoducts:before {
+    bottom: 0;
+    left: 0;
+    border-left: 1px solid #25ff66;
+    border-top: 1px solid #25ff66;
+    transition: 0s ease opacity .8s, .2s ease width .4s, .2s ease height .6s;
+}
+.followtopoducts:after {
+    top: 0;
+    right: 0;
+    border-right: 1px solid #25ff66;
+    border-bottom: 1px solid #25ff66;
+    transition: 0s ease opacity .4s, .2s ease width , .2s ease height .2s;
+}
+
+.followtopoducts:hover:before,
+.followtopoducts:hover:after{
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+}
+.followtopoducts:hover:before {transition: 0s ease opacity 0s, .1s ease height, .2s ease width .1s;}
+.followtopoducts:hover:after {transition: 0s ease opacity .2s, .1s ease height .2s , .1s ease width .3s;}
+/*button end*/

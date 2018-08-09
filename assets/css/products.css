@@ -1,0 +1,20 @@
+.products{
+    height: 550px;
+}
+
+.products .text{
+    text-align: center;
+    width: 100%;
+    margin-top: 4%;
+}
+
+.products .text h2{
+    margin-bottom: 20px;
+    font-size: 1.7em;
+    color: #222D48;
+}
+
+.products .text p{
+    font-size: 1.2em;
+}
+

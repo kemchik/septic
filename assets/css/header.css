@@ -1,18 +1,9 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-
 header{
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     background-color: #ffffff;
     grid-template-rows: 80px;
-}
-
-ul{
-    list-style-type: none;
 }
 
 .links{
@@ -24,6 +15,7 @@ ul{
 .links a{
     text-decoration: none;
     color: #222D48;
+    line-height: 100%;
     font-weight: bold;
 }
 
