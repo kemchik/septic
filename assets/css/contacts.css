@@ -1,0 +1,118 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:800,400);
+
+.infoaboutus{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#contacts h2{
+    width: 100%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+#map{
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 4%;
+}
+
+.dateofcontacts{
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.dateofcontacts div:first-child h4{
+    padding-top: 13px;
+}
+
+.dateofcontacts h4{
+    padding-top: 30px;
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.dateofcontacts p{
+    padding-bottom: 2px;
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.dateofcontacts ul, .dateofcontacts li{
+    padding: 0;
+    margin: 0;
+    transform: none;
+    text-align: left;
+}
+
+.dateofcontacts iframe{
+    margin-top: 5px;
+}
+
+.dateofcontacts li{
+    font-size: 1.3em;
+}
+
+.dateofcontacts .email{
+    color: #0ea432;
+    font-size: 1.3em;
+}
+
+.formmessages{
+    transform: translateX(-50%);
+    margin-left: 50%;
+}
+
+.formmessages input, .formmessages textarea{
+    width: 400px;
+    height: 50px;
+    display: block;
+    font-size: 1.3em;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.formmessages input[type='text'], .formmessages textarea{
+    border: 1px solid #566A9A;
+    padding-left: 10px;
+}
+
+.formmessages textarea{
+   padding-top: 10px;
+    height: 170px;
+    width: 400px;
+    max-width: 400px;
+    min-height: 170px;
+    max-height: 270px;
+}
+
+.formmessages input[type='text']:hover, .formmessages input[type='text']:focus, .formmessages input[type='text']:active,
+.formmessages textarea:hover, .formmessages textarea:focus, .formmessages textarea:active{
+    outline: #0ea432 solid 1px;
+}
+
+.formmessages button{
+    margin: 20px 0 0 0;
+}
+
+#ordercall{
+    background-color: #0f0f10;
+    color: white;
+    width: 400px;
+    font-size: 1.6em;
+    margin-top: 100px;
+    cursor: pointer;
+    margin-left: 55%;
+    border-radius: 6px;
+    text-transform: uppercase;
+    border: solid 1px #0ea432;
+    transform: translateX(-50%);
+    height: 70px;
+}
+
+#ordercall:hover, #ordercall:active{
+    background-color: #566A9A;
+    border-color: #1a531b;
+}

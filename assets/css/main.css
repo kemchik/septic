@@ -1,84 +1,115 @@
 .main{
+    padding-top: 20px;
     display: grid;
     grid-template-columns: 3fr 2fr;
-    background-color: #566A9A;
-    height: 550px;
+    position: relative;
+    height: 600px;
+    position: relative;
 }
 
-.main div:nth-child(1){
+.maintext{
     margin-left: 15%;
     margin-top: 10%;
 }
 
-.main h1{
+.maintext a{
+    margin-top: 100px;
+}
+
+.maintext h1{
     color: #ffffff;
+    font-size: 2.5em;
+    text-shadow: 1px 1px 2px black, 0 0 2em black;
     margin-bottom: 15px;
 }
 
-.main h2{
-    color: #ffffff;
-    margin-top: 15px;
-    font-size: 1.7em;
-}
-
-.main img{
+.main>div img{
     margin-top: 40px;
     margin-left: 20px;
 }
 
-/*button*/
-.followtopoducts {
-    margin: 70px 10px;
-    text-decoration: none;
-    outline: none;
-    display: inline-block;
-    padding: 20px 30px;
-    position: relative;
-    color: #25ff66;
-    border: 1px solid rgba(205, 255, 213, 0.84);
-    border-radius: 5px;
-    background: none;
-    font-weight: 300;
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-.followtopoducts:hover{
-    color: #ffffff;
-}
-
-.followtopoducts:before,
-.followtopoducts:after {
-    content: "";
+.mainpicter{
+    z-index: -1;
     position: absolute;
-    width: 0;
-    height: 0;
-    opacity: 0;
-    box-sizing: border-box;
-}
-
-.followtopoducts:before {
-    bottom: 0;
-    left: 0;
-    border-left: 1px solid #25ff66;
-    border-top: 1px solid #25ff66;
-    transition: 0s ease opacity .8s, .2s ease width .4s, .2s ease height .6s;
-}
-.followtopoducts:after {
-    top: 0;
-    right: 0;
-    border-right: 1px solid #25ff66;
-    border-bottom: 1px solid #25ff66;
-    transition: 0s ease opacity .4s, .2s ease width , .2s ease height .2s;
-}
-
-.followtopoducts:hover:before,
-.followtopoducts:hover:after{
-    height: 100%;
     width: 100%;
-    opacity: 1;
 }
-.followtopoducts:hover:before {transition: 0s ease opacity 0s, .1s ease height, .2s ease width .1s;}
-.followtopoducts:hover:after {transition: 0s ease opacity .2s, .1s ease height .2s , .1s ease width .3s;}
-/*button end*/
+
+.formforcall{
+    width: 320px;
+    height: 325px;
+    padding: 32px 24px;
+    background: #ffffff;
+    font-weight: normal;
+    text-align: center;
+    font-size: 16px;
+    color: #212121;
+    text-transform: uppercase;
+    margin-top: 50%;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.formforcall input[type='text'], .formforcall input[type='tel'] {
+    display: inline-block;
+    height: 45px;
+    outline: none;
+    text-transform: uppercase;
+    line-height: 45px;
+    background-color: #f5f5f5;
+    width: 250px;
+    padding: 0 18px;
+    font-size: 13px;
+    font-family: rl;
+    border: 0;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    font-size: 1.0em;
+}
+
+.formforcall input[type='text']:focus, .formforcall input[type='text']:hover, .formforcall input[type='text']:active,
+.formforcall input[type='tel']:focus, .formforcall input[type='tel']:hover, .formforcall input[type='tel']:active{
+    outline: none;
+}
+
+.formforcall button[type='submit']{
+    display: table;
+    height: 45px;
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+    color: #ffffff;
+    background: #1f5044;
+    bottom: 0;
+    width: 210px;
+    border: 0px solid #1f5044;
+    float: none;
+    left: 0;
+    outline: none;
+    cursor: pointer;
+    margin: 10px auto 0;
+    position: relative;
+}
+
+.formforcall button[type='submit'] span{
+    color: #ffffff;
+    width: 30%;
+    font-size: 0.8em;
+    line-height: 15px;
+    text-transform: uppercase;
+    outline: none;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.formforcall button[type='submit']:hover{
+    border: 0px solid #1f5044;
+    background: #22685b;
+}
+
+formforcall button[type='submit']:focus,
+formforcall button[type='submit']:active,
+formforcall button[type='submit']:hover{
+    outline: none;
+    border: 0px solid #1f5044;
+}

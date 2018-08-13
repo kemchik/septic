@@ -1,20 +1,28 @@
-.products{
+#products{
     height: 550px;
 }
 
-.products .text{
+#products .text{
     text-align: center;
     width: 100%;
     margin-top: 4%;
 }
 
-.products .text h2{
+#products .text h2{
     margin-bottom: 20px;
     font-size: 1.7em;
     color: #222D48;
 }
 
-.products .text p{
+#products .text p{
     font-size: 1.2em;
 }
 
+#listofproducts{
+    margin: 4% 7%;
+}
+
+#listofproducts .active{
+    background-color: rgba(86,106, 153, 0.5);
+    color: #fff;
+}
